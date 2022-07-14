@@ -3,13 +3,7 @@ let heartButtons = document.getElementsByClassName('heart')
 let cartCount = document.getElementById('cart-count')
 console.log(heartButtons)
 let count = 0;
-for (let i = 0; i < cartButtons.length; i++) {
-  cartButtons[i].addEventListener('click', addToCart)
-}
 
-for (let i = 0; i < heartButtons.length; i++) {
-  heartButtons[i].addEventListener('click', favReq)
-}
 
 
 
@@ -27,9 +21,6 @@ function addToCart(){
 
 
 const favReq = () => {
-    alert('hey')
-    return
-
     axios.get('http://localhost:5501/api/heart')
     .then(res => {
       const data = res.data;
@@ -54,3 +45,11 @@ const favReq = () => {
   }
   
   submitBtn.addEventListener("click", saveEmail)
+
+  for (let i = 0; i < cartButtons.length; i++) {
+    cartButtons[i].addEventListener('click', addToCart)
+  }
+  
+  for (let i = 0; i < heartButtons.length; i++) {
+    heartButtons[i].addEventListener('click', favReq)
+  }

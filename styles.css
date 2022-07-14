@@ -9,7 +9,7 @@ h1 {
 }
 
 h2 {
-    background-color:  gainsboro;
+    background-color: #D3D4D9;
     width: 2400px;
     height: 120px;
     margin-left: -10px;
@@ -17,6 +17,8 @@ h2 {
     border-width: 0.1ch;
     margin-top: -22px;
 }
+
+
 
 #main-names {
     display: flex;
@@ -90,10 +92,13 @@ h2 {
     margin-right: 50px;
     align-items: center;
     justify-content: space-between;
+    margin-top: -20px;
+   
+    
 }
 
-#heart {
-    background-color: hotpink;
+.heart {
+    background-color: #F7A1B5;
 }
 
 footer {
@@ -102,4 +107,8 @@ footer {
     margin-top: 300px;
     border: solid;
     border-width: 0.1ch;
+}
+
+.baker-card:hover{
+    transform: scale(1.1); 
 }

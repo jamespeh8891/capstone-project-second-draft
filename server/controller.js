@@ -13,7 +13,7 @@ module.exports = {
     saveEmail: (req, res) => {
         const { email } = req.body
         emailArr.push(email)
-        res.status(200).send("Email saved")
+        res.status(200).send("Email saved  || Now a member of J's Skate Shop!")
         
         
     },
